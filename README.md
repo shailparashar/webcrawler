@@ -1,5 +1,9 @@
 # Web Crawler
-This program is a deep web crawler to go upto provided depth. Default depth of 2 is configured in case depth param is not provided in request. It is exposed as a REST endpoint. It uses caching mechanism to improve performance for repeated urls. Also, it ignores similar child urls to prevent looping.
+This program is a deep web crawler to go upto provided depth. Default depth of 2 is configured in case depth param is not provided in request. 
+It is exposed as a REST endpoint and provides additional below features:
+- It uses caching mechanism to improve performance for repeated urls. 
+- It ignores similar child urls to prevent looping.
+- It provides security from cross-site scripting attacks.
 
 ## Implementation
 The solution delivered here is a Java project implemented as a Spring Boot / Maven project.
